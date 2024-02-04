@@ -1,0 +1,108 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c2c3d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator-container {
+  background-color: #000000;
+  width: 320px;
+  height: 400px;
+  border: 3px solid #47476c;
+  padding: 5px;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  height: 86%;
+}
+
+.delete-button {
+  font-size: 1em;
+  font-family: Droid Serif;
+  background-color: #ad393a;
+  color: white;
+  grid-column: span 2;
+  border: none;
+  grid-column: span 2;
+}
+
+.operation-button {
+  font-size: 1.1em;
+  font-family: Valera;
+  background-color: #666666;
+  color: white;
+  border: none;
+}
+
+.number-button {
+  font-size: 1.1em;
+  font-family: Droid Serif;
+  background-color: #4d4d4d;
+  color: white;
+  border: none;
+}
+
+.equal-button {
+  background-color: #004466;
+  font-size: 1.1em;
+  font-family: Droid Serif;
+  color: white;
+  border: none;
+  grid-row: span 2;
+}
+
+.delete-button:hover, .operation-button:hover, .number-button:hover, .equal-button:hover {
+  color: black;
+  transform: scale(1.02);
+  border: 1px solid #a9a9a9;
+}
+
+.yellow-display {
+  font-size: 1.1em;
+  font-family: Cone;
+  height: 7%;
+  width: 100%;
+  color: #ffa503;
+  text-align: right;
+}
+
+.white-display {
+  font-size: 1.1em;
+  font-family: Bauchaumaicha;
+  height: 7%;
+  width: 100%;
+  color: white;
+  text-align: right;
+}
+
+h4 {
+  font-family: Courier;
+  font-weight: normal;
+  font-size: 1em;
+  margin-top: 15px;
+  text-align: center;
+}
+
+a {
+  color: #00264d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+}
